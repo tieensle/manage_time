@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #B0B8B4FF; */
+}
+
+@font-face {
+  font-family: "Cleon";
+  src: url("/assets/fonts/Cleon-Demo.otf") format("truetype");
+}
+
+html {
+  background-image: url(./galaxy-background-design_2001749.jpg);
+  /* background-size: cover; */
+  background-size: 150%;
+  background-position: 50% 50%;
+  font-family: "Cleon";
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  line-height: normal;
+  font-size: 7vh;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.time,
+button,
+label,
+input {
+  line-height: normal;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.time {
+  font-size: 30px;
+  margin: 5% auto;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+#state {
+  margin-top: 10vh;
+}
+
+.title,
+.setUp {
+  line-height: normal;
+  font-size: 7vh;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+button {
+  /* margin-left: ; */
+  width: 150px;
+  height: 70px;
+  background-color: #b0b8b4ff;
+  /* border: 2px solid rgb(32, 204, 138) !important; */
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 5% 1rem;
+  transition: 0.6s all ease;
+  position: absolute;
+  left: 37.5vw;
+  bottom: 15px;
+}
+
+button:hover {
+  transform: scale(1.12);
+  transform: translate(0, 1);
+  color: #fff;
+  box-shadow: 1px 1px 1px 1px #fc766aff,
+    2px 2px 2px 2px rgba(252, 118, 106, 0.842),
+    4px 4px 4px 4px rgba(252, 118, 106, 0.507),
+    6px 6px 6px 6px rgba(252, 118, 106, 0.212);
+}
+
+label,
+input {
+  display: block;
+  padding: 10px;
+  margin: 3vh auto;
+}
+
+input {
+  border: #fc766aff 1px solid;
+}
+
+#bar {
+  width: 400px;
+  height: 2px;
+  /* background-color: #d87148; */
+  border: #fef645 solid 1px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 5% auto;
+  justify-content: flex-end;
+  -webkit-animation: glow-box 1s ease-in-out infinite alternate;
+  -moz-animation: glow-box 1s ease-in-out infinite alternate;
+  animation: glow-box 1s ease-in-out infinite alternate;
+}
+
+#progress {
+  width: 400px;
+  height: 1px;
+  background-color: #fef645;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#dot {
+  width: 14px;
+  height: 14px;
+  background-color: #fef645;
+  border: #fef645 3px solid;
+  border-radius: 50%;
+  margin: 0;
+  -webkit-animation: glow-box 1s ease-in-out infinite alternate;
+  -moz-animation: glow-box 1s ease-in-out infinite alternate;
+  animation: glow-box 1s ease-in-out infinite alternate;
+  position: relative;
+}
+
+#play-pause,
+#refresh,
+#skip {
+  position: relative;
+  left: 0px;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.controller {
+  display: flex;
+  flex-direction: row;
+  /* width: 50vw; */
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+#start-screen {
+  margin-top: 10vh;
+}
+@-webkit-keyframes glow-box {
+  from {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #dbd81a, 0 0 4px #dbd81a,
+      0 0 5px #dbd81a, 0 0 6px #dbd81a, 0 0 7px #dbd81a;
+  }
+
+  to {
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px yellow, 0 0 5px yellow,
+      0 0 6px yellow, 0 0 7px yellow, 0 0 8px yellow;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073,
+      0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6,
+      0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;
+  }
+}
+
+@-webkit-keyframes glow-result {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #dbd81a, 0 0 4px #dbd81a,
+      0 0 5px #dbd81a, 0 0 6px #dbd81a, 0 0 7px #dbd81a;
+  }
+
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px yellow, 0 0 5px yellow,
+      0 0 6px yellow, 0 0 7px yellow, 0 0 8px yellow;
+  }
+}
+
+input,
+button {
+  width: 20vw;
+  min-width: 15vw;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  font-size: 3vw;
+  padding: 2vh 4vh;
+  color: #fff;
+  border: 1.5px solid #ffa260;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-animation: glow-result 1s ease-in-out infinite alternate;
+  -moz-animation: glow-result 1s ease-in-out infinite alternate;
+  animation: glow-result 1s ease-in-out infinite alternate;
+}
+
+input {
+  height: 6vh;
+  padding: 5px;
+  width: 6vw;
+  margin: 3px;
+  margin-left: 120px;
+  font-size: 33px;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+  transform: translateY(-0.25em);
+}
+
+button:focus {
+  animation: pulse 1.5s 1;
+  color: white;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #dbd81a, 0 0 4px #dbd81a,
+    0 0 5px #dbd81a, 0 0 6px #dbd81a, 0 0 7px #dbd81a;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #ffa2607c;
+  }
+
+  100% {
+    box-shadow: 0 0 0 35px #ffa26000;
+  }
+}
